@@ -33,7 +33,7 @@ lookup = letter => {
 hash = str => {
   let num = 0;
   for (let i = 0; i < str.length; i++) {
-    num += lookup(str[i]) / 2;
+    num += lookup(str[i]) % 2;
   }
   return num;
 };
