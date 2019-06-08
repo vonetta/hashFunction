@@ -3,7 +3,7 @@ hash = str => {
   for (let i = 0; i < str.length; i++) {
     num += str.charCodeAt(str[i]);
   }
-  return num % 1000;
+  return num % 31;
 };
 
 console.log(hash("testimony"));
